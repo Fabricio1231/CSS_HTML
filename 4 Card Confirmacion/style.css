@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: #1c56a8;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.container .container-two{
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(49, 95, 137, 0.5);
+}
+
+.container .container-two .content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+}
+
+.container .container-two .content .icon{
+    margin-right: 10px; 
+}
+
+.container .container-two .content .message .tittle{
+    font-weight: bolder;
+}
+
+.container .container-two .actions{
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.container .container-two .actions button{
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor:d pointer;
+}
+
+.container .container-two .actions .btn-download{
+    background-color: #029be1;
+    color: white;
+}
+
+.container .container-two .actions .btn-download:hover{
+    background-color: #0387c4;
+}
+
+.container .container-two .actions .btn-back{
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+
+.container .container-two .actions .btn-back:hover{
+    background-color: #eee;
+}
+
+@media (max-width:600px){
+    .container .container-two{
+        width: 80%;
+    }
+    .container .container-two .actions{
+        flex-direction: column;
+    }
+}

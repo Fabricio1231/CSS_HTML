@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.padre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hijo{
+    background: rgb(61, 61, 179);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.hijo::before{
+    content: "before";
+    background: red;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+}
+
+.hijo::after{
+    content: "after";
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+}
